@@ -9,13 +9,36 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <COMReference Include="WMPLib">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>6bf52a50-394a-11d3-b153-00c04f79faa6</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <WrapperTool>aximp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>6bf52a50-394a-11d3-b153-00c04f79faa6</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
     <Import Include="System.Data" />
     <Import Include="System.Drawing" />
     <Import Include="System.Windows.Forms" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="NAudio" Version="2.2.1" />
+    <PackageReference Include="LibVLCSharp" Version="3.9.0" />
+    <PackageReference Include="VideoLAN.LibVLC.Windows" Version="3.0.21" />
+    <PackageReference Include="Vlc.DotNet.Core" Version="3.1.0" />
+    <PackageReference Include="Vlc.DotNet.Forms" Version="3.1.0" />
   </ItemGroup>
 
   <ItemGroup>
