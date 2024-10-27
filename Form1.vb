@@ -5,9 +5,9 @@ Imports Vlc.DotNet.Forms
 Imports System.Web
 Public Class Form1
 
-    Private Async Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim url As String = TextBox2.Text & HttpUtility.UrlEncode(TextBox1.Text) & TextBox3.Text
-        MsgBox(url)
+        ' MsgBox(url)
         VlcControl1.Stop()
 
         VlcControl1.SetMedia(url, String.Empty)
